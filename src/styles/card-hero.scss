@@ -1,0 +1,50 @@
+.card-hero{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	height: 100px;
+	padding-left: 15px;
+	overflow: hidden;
+  color: #fff;
+
+	.name-movie{
+		height: 100px;
+    display: flex;
+    align-items: flex-start;
+		flex-direction: column;
+		justify-content: space-around;
+		.title{
+			font-size: 18px;
+			margin: 0;
+		}
+
+		.subtitle{
+			font-size: 14px;
+			margin: 0;
+		}
+	}
+
+	.image-movie{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+.c-america{	background: #000042 }
+.c-marvel{	background: #CC4224 }
+.strange{	background: #454253 }
+.avengers{	background: #1A1A64 }
+.ironman{	background: #D3AF37 }
+.thor{	background: #03ADE9 }
+.blackpanther{	background: #0C0B13 }
+.antman{	background: #C5CFD1 }
+.hulk{	background: #A2CD48 }
+.spider { background: #DF1F2D }
+.guardians { background: #F8B54C }
+
+
+@media(min-width: 992px){
+	.card-hero{
+		grid-template-columns: 1fr 1fr;
+	}
+}
